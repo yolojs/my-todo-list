@@ -1,0 +1,25 @@
+{ "Instances":
+  { "Router": "Router"
+  , "Router.Api": "Adapter.Http.Server"
+  , "Router.Api.CORS": "Adapter.Http.CORS"
+
+  , "Database.SQL": "Adapter.Knex"
+  }
+
+, "Data":
+  { "Router": { "routes": [ "config/router.map" ] }
+  , "Router.Api": { "ip": "0.0.0.0", "port": 8999 }
+
+  , "Cluster": { "count": 1 }
+
+  , "Database.SQL":
+    { "backend": { "client": "mysql"
+                 , "connection": {}
+                 , "pool": { "min": 0, "max": 3 }
+                 , "acquireConnectionTimeout": 90000
+                 }
+    }
+
+  , "TodoList.SQL.*": { "mysql": { "fqn": "Database.SQL", "name": "backend" } }
+  }
+}

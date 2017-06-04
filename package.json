@@ -1,0 +1,21 @@
+{
+  "name": "yolo-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "graphql": "^0.9.6",
+    "jmespath": "^0.15.0",
+    "promise": "^7.1.1",
+    "yolojs-adapter-http": "^1.0.0",
+    "yolojs-adapter-knex": "^1.0.0",
+    "yolojs-adapter-graphql": "^1.0.0",
+    "yolojs-adapter-mysql": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

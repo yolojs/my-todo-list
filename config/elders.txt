@@ -1,0 +1,4 @@
+node_modules/yolojs-adapter-http
+node_modules/yolojs-adapter-mysql
+node_modules/yolojs-adapter-knex
+node_modules/yolojs-adapter-graphql
